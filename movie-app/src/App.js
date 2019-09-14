@@ -9,15 +9,15 @@ class App extends React.Component {
 
   render() {
 
-    return (
-      <div className="App">
-        <div className="title-container">
-          <Title />
-        </div>
-        <div className="form-container">
-          <Form />
-        </div>
-      </div>
+    return(
+          <div className="App">
+            <div className="col-xs-5 title-container">
+              <Title />
+            </div>
+            <div className="form-container">
+              <Form />
+            </div>
+          </div>
     );
   }
 
