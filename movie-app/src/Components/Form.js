@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = () => (
+const Form = (props) => (
 
-	<form>
+	<form onSubmit = { props.getMovie } >
 		<input type="text" name="movie" placeholder="Enter Your Movie..." />
 		<button>Search Movie</button>
 	</form>
