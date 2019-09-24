@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from './Components/Title';
 import Form from './Components/Form';
-import Movie from './Components/Movies';
+import './App.css';
+import Movies from './Components/Movies';
 
 const API_KEY = "24edb4db";
 
@@ -24,22 +24,16 @@ class App extends React.Component {
   }
 
   render() {
-
     return(
-          <div className="App">
-            <div className="col-xs-5 title-container">
-              <Title />
-            </div>
-            <div className="form-container">
-              <Form getMovie={this.getMovie} />
-            </div>
-            <div className="movie-container">
-              <Movie movies={this.state.movies} />
-            </div>
-          </div>
+      <div className="App">
+          <header className="App-header">
+            <h1 className="App-title">Movie Deetz!!!</h1>
+          </header>
+          <Form getMovie={this.getMovie} />
+          <Movies movies={this.state.movies} />
+      </div>
     );
   }
-
 }
 
 export default App;
